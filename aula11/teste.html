@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidades</h1>
+    País de Nascimento: <input type="text" id="país">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var país = document.getElementById('país')
+            var res = document.getElementById('res')
+            var nac = país.value
+            res.innerHTML += `Seu país de nascimento é ${país.value}`
+            if (país.value == 'Brasil','brasil') {
+                res.innerHTML = `Você é Brasileiro`
+            } else {
+                res.innerHTML = `Você é Estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>

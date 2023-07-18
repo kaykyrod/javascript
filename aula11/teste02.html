@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+    <style>
+        body {
+            background-color: rgb(47, 150, 150);
+            font: bold 1.2em 'Arial';
+        }
+
+        input {
+            font: normal 1em Arial;
+            width: 150px;
+        }
+
+        div#res {
+            padding-top: 20px;
+            font: bold 1em 'Arial';
+        }
+    </style>
+</head>
+<body>
+    <h1>Números identicos</h1>
+    <input type="number" name="" id="num">
+    <input type="button" value="Teste" onclick="testar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var num = document.getElementById('num')
+        var res = document.getElementById('res')
+        
+        function testar() {
+            if (num.value == '10') {
+                res.innerHTML = 'O seu número é identico'
+            } else {
+                res.innerHTML = 'O seu número é diferente'
+            }
+        }
+    </script>
+</body>
+</html>
